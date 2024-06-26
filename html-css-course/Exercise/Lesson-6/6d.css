@@ -1,0 +1,28 @@
+.pfp {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 25px;
+    vertical-align: middle;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.Text-box {
+    font-size: 20px;
+    border: none;
+    width: 240px;
+    vertical-align: middle;
+}
+.Tweet-button {
+    border: none;
+    background-color: rgb(76, 171, 255);
+    color: white;
+    font-size: 16px;
+    border-radius: 20px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: box-shadow 1s;
+}
+.Tweet-button:hover {
+    box-shadow: 2px 2px 5px black;
+}
