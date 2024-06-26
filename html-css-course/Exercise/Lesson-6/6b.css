@@ -3,9 +3,9 @@ input {
 	width: 500px;
 	border: none;
 	padding: 12px 15px;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-  margin-top: 20px;
-  margin-left: 20px;
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+	margin-top: 20px;
+	margin-left: 20px;
 	border-radius: 30px;
 	transition: box-shadow 1s, margin-top 1s, padding 1s;
 }

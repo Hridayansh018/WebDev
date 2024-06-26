@@ -1,0 +1,42 @@
+p {
+    font-family: Arial;
+}
+.email {
+    color: black
+}
+
+.info {
+    font-size: 16px;
+    width: 300px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(100, 100, 100);
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.tnc {
+    color: gray;
+    width: 300px;
+}
+.login {
+    background-color: rgb(10, 110, 255);
+    color: white;
+    border: none;
+    font-size: 20px;
+    width: 300px;
+    padding: 15px 0;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: box-shadow 1s, background-color 1s, color 1s;
+ }
+ .login:hover {
+    box-shadow: 2px 2px 5px black;
+    background-color: white;
+    color: rgb(10, 110, 255);
+    border-color: rgb(10, 110, 255);
+    border-style: solid;
+
+ }
