@@ -1,0 +1,44 @@
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: Arial;
+    width: 260;
+}
+
+.Title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.Worth {
+    color: gray;
+    margin-top: 4px;
+    margin-bottom: 20px;
+}
+
+.content {
+    font-weight: bold;
+}
+
+.Start-button {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-top: 10px;
+    border: none;
+    transition: box-shadow 1s, padding 1s, border-radius 1s;
+    cursor: pointer;
+}
+.Start-button:hover {
+    box-shadow: 2px 2px 5px black;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 10px;
+}
