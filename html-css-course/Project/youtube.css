@@ -1,0 +1,22 @@
+.thumbnail {
+    width: 300px;
+    border-radius: 20px;
+}
+
+.Search-Bar {
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.title{
+    font-family: Arial;
+    font-size: 18px;
+}
+
+.author {
+    font-family: Arial;
+}
+
+.views {
+    font-family: Arial;
+}
