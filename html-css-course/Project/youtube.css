@@ -1,22 +1,25 @@
+p {
+    font-family: Arial;
+}
+
 .thumbnail {
     width: 300px;
     border-radius: 20px;
+    cursor: pointer;
+    display: block;
+    margin-top: 20px;
 }
 
 .Search-Bar {
-    font-size: 12px;
-    margin-left: 10px;
+    border-radius: 30px;
 }
 
-.title{
-    font-family: Arial;
+.title {
     font-size: 18px;
+    width: 300px;
 }
 
-.author {
-    font-family: Arial;
-}
-
-.views {
-    font-family: Arial;
+.author ,
+.views{
+    color: rgb(100, 100, 100);
 }
