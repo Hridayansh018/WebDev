@@ -17,31 +17,33 @@ p {
     margin-bottom: 10px;
 }
 
-.cahnnel-pfp {
+.channel-pfp {
     width: 40px;
     border-radius: 20px;
     object-fit: cover;
     margin-top: 7px;
     display: inline-block;
-    align-items: top;
+    vertical-align: top;
 }
 
-.cahnnel-profile {
+.channel-profile {
     width: 40px;
     border-radius: 20px;
     object-fit: cover;
+    display: inline-block;
 }
 
 .video-info {
     display: inline-block;
     width: 200px;
     vertical-align: top;
-  }
+}
 
 .video-title {
     width: 200px;
     font-size: 16px;
     font-weight: bold;
+    display: inline-block;
 }
 
 .video-author {
@@ -60,17 +62,5 @@ p {
 .video-preview {
     width: 300px;
     display: inline-block;
-    vertical-align: top;
-    margin-right: 15px;
-}
 
-.video-author {
-    font-size: 14px;
-    margin-top: 10px;
-    color: rgb(96, 96, 96);
-    margin-bottom: 4px;
-}
-
-.video-author {
-    margin-bottom: 4px;
 }
