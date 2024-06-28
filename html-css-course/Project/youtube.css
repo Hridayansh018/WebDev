@@ -3,14 +3,6 @@ p {
     margin: 0;
 }
 
-.searchbox {
-    display: block;
-    width: 300px;
-    margin-bottom: 18px;
-    border-style: solid;
-    border-radius: 4px;
-}
-
 .thumbnail {
     width: 100%;
     display: block;
@@ -22,7 +14,6 @@ p {
     display: grid;
     grid-template-columns: 50px 1fr;
     width: 200px;
-    background-color: lightcoral;
   }
 .channel-pfp {
     width: 40px;
@@ -44,7 +35,6 @@ p {
 .video-info {
     display: inline-block;
     width: 260px;
-    background-color: lightblue;
   }
 
 .video-title {
