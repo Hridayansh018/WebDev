@@ -1,0 +1,10 @@
+.main-body-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 8px; 
+}

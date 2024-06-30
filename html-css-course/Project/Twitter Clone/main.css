@@ -1,0 +1,13 @@
+body{
+	background-color: black;
+}
+
+.main-body{
+	background-color: red;
+	width: calc(100% - 400px); /* Subtract widths of left and right sidebars */
+	height: calc(100vh - 40px);/* Push content to the right to avoid overlapping left sidebar */
+	margin-right: 300px; /* Ensure it does not overlap the right sidebar */
+	position: fixed;
+	top: 40px; /* Align with bottom of header */
+	left: 200px; /* Align with the right edge of left sidebar */
+}
