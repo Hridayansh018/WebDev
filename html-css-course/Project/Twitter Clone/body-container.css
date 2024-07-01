@@ -1,10 +1,6 @@
-.main-body-container{
+.main-body-container {
     display: flex;
     flex-direction: row;
-}
-
-.menu-icon {
-    width: 40px;
-    height: 40px;
-    margin-bottom: 8px; 
+    margin-top: 72px; /* Adjust this value if needed */
+    width: 100%;
 }

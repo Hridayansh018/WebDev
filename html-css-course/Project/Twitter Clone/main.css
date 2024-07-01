@@ -3,11 +3,148 @@ body{
 }
 
 .main-body{
-	background-color: red;
-	width: calc(100% - 400px); /* Subtract widths of left and right sidebars */
-	height: calc(100vh - 40px);/* Push content to the right to avoid overlapping left sidebar */
-	margin-right: 300px; /* Ensure it does not overlap the right sidebar */
+	min-height: 1000px;
+	width: 50%;
+	margin-right: 350px; 
 	position: fixed;
-	top: 40px; /* Align with bottom of header */
-	left: 200px; /* Align with the right edge of left sidebar */
+	top: 72px; 
+	left: 210px;
+	right: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	margin-top: 50px;
+	margin: 0 auto;
+}
+
+.profile-window{
+	display: flex;
+	flex-direction: column;
+	height: 230px;
+	position: relative;
+}
+
+.banner-picture{
+	display: flex;
+	height: 200px;
+	width: 100%;
+	object-fit: cover;
+	z-index: 196;
+	border: 7px solid black;
+}
+
+.profile-picture-container{
+	display: flex;
+	height: 120px;
+	z-index: 197;
+	align-items: center;
+	margin-left: 60px;
+}
+
+.profile-picture{
+	display: flex;
+	height: 160px;
+	width: 160px;
+	border-radius: 50%;
+	object-fit: cover;
+	z-index: 198;
+	margin-left: -30px;
+	top: -120px;
+	margin-bottom: 80px;
+	border: 7px solid black;
+}
+
+.Profile-button{
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    height: 40px;
+	width: 140px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 20px;
+	position: absolute;
+	right: 90px;
+	bottom: -30px;
+	cursor: pointer;
+}
+
+.name-container {
+	color: white;
+	display: flex;
+	flex-direction: column;
+	font-size: 25px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	margin-right: 20px;
+	margin-left: 20px;
+	margin-top: -20px;
+}
+
+.name-subcontainer {
+	font-size: 14px;
+	color: gray;
+	margin-top: -20px;
+}
+
+.bio-container{
+	font-size: 15px;
+	color: white;
+	margin-top: -23px;
+	margin-right: 120px;
+	margin-left: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.more-info{
+	font-size: 16px;
+	color: gray;
+	font-family: Arial, Helvetica, sans-serif;
+	display: flex;
+	flex-direction: row;
+	margin-left: 20px;
+	margin-right: 10px;
+	justify-content: space-between;
+}
+
+.info-tag{
+	margin-left: 10px;
+}
+
+.followers-tab{
+	font-size: 16px;
+	color: gray;
+	font-family: Arial, Helvetica, sans-serif;
+	display: flex;
+	flex-direction: row;
+	padding-left: 10px;
+	margin-left: 20px;
+	margin-right: 530px;
+	justify-content: space-between;
+}
+
+.Feature-grid{
+	display: flex;
+	flex-direction: row;
+	margin-left: 20px;
+	right: 110px;
+	justify-content: space-between;
+}
+
+.Feature-font{
+	font-size: 16px;
+	height: 50px;
+	padding-top: 30px;
+	min-width: 140px;
+	max-width: 180px;
+	text-align: center;
+	color: gray;
+	font-family: Arial, Helvetica, sans-serif;
+	transition: color 1s, font-weight 1s, background-color 1s;
+}
+
+.Feature-font:hover{
+	color: white;
+	font-weight: bold;
+	background-color: rgb(22, 22, 22);
 }

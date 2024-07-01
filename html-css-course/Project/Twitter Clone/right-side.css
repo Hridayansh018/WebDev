@@ -1,8 +1,197 @@
 .right-side{
-    background-color: green;
-    width: 300px;
-    height: 800px;
-    right: -0;
+    background-color: black;
+    width: 24.65%;
+    height: 2000px;
     display: flex;
+    flex-direction: column;
+    right: 0;
     position: fixed;
+    top: 78px;
+}
+
+.post-container{
+    height: 305px;
+    width: 90%;
+    margin: 20px;
+    margin-top: -30px;
+    border-radius: 20px;
+    border: 2px solid white;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+.sub-post{
+    font-size: 30px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 20px;
+    padding-left: 60px;
+    margin-bottom: 10px;
+    top: -10px;
+}
+
+.post1{
+    height: 140px;
+    width: 90%;
+    margin: 20px;
+    margin-left: 13px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: black;
+    border-style: solid;
+    border-color: rgb(36, 36, 36);
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.5s;
+}
+
+.Modi-G{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+    color: white;
+    left: 8px;
+    top: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.modi-G-pic{
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.post-content{
+    width: 90%;
+    height: 40px;
+    font-size: 14px;
+    color: white;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    
+}
+
+.post2{
+    height: 115px;
+    width: 90%;
+    margin: 20px;
+    margin-left: 13px;
+    margin-top: 18px;
+    border-radius: 10px;
+    background-color: black;
+    border-style: solid;
+    transition: background-color 0.5s;
+    border-color: rgb(36, 36, 36);
+}
+
+.aaj-tak{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    font-size: 20px;
+    color: white;
+    left: 8px;
+    top: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.aaj-tak-pic{
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;
+    margin-top: -5px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.post-content2{
+    width: 90%;
+    height: 40px;
+    font-size: 14px;
+    color: white;
+    margin-left: 20px;
+    margin-top: -20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    
+}
+
+.recommendation-container{
+    height: 285px;
+    width: 90%;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid white;
+}
+
+.recommendation{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100px;
+    width: 90%;
+    border-radius: 10px;
+    margin: 10px 18px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 1px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(36, 36, 36);
+    transition: background-color 0.5s;
+    cursor: pointer;
+}
+
+.account-pic{
+    height: 50px;
+    width: 50px;
+    margin: 11px;
+    border-radius: 50%;
+}
+
+.account-name{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+}
+
+.account-help{
+    display: flex;
+    flex-direction: column;
+}
+
+.account-username{
+    font-size: 14px;
+	color: gray;
+    margin-top: -17px;
+}
+
+.Follow-button{
+    height: 30px;
+    font-size: 20px;
+    width: 90px;
+    position: fixed;
+    margin-top: 35px;
+    margin-left: 240px;
+    background-color: rgb(37, 186, 255);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.post1:hover,
+.post2:hover,
+.recommendation:hover{
+    background-color: rgb(22,22,22);
 }
