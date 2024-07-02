@@ -11,8 +11,8 @@ body{
 	left: 210px;
 	right: 0;
 	left: 0;
-	display: flex;
-	flex-direction: column;
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
 	margin-top: 50px;
 	margin: 0 auto;
 }
@@ -55,8 +55,8 @@ body{
 }
 
 .Profile-button{
-    background-color: black;
-    border: 1px solid white;
+  background-color: black;
+  border: 1px solid white;
     color: white;
     height: 40px;
 	width: 140px;

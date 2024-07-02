@@ -74,6 +74,8 @@
 .twitter-logo{
 	height: 50px;
 	margin-top: 10px;
-	margin-left: 40px;
+	margin-left: 60px;
 	margin-right: 10px;
+	justify-content: center;
+	align-items: center;
 }
