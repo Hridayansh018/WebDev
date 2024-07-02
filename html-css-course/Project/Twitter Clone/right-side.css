@@ -1,15 +1,12 @@
 .right-side{
     background-color: black;
-    width: 100%;
-    max-width: 350px;
+    width: 24.65%;
+    height: 2000px;
     display: flex;
     flex-direction: column;
     right: 0;
     position: fixed;
-    top: 72px;
-    padding: 0 20px;
-    margin-right: auto;
-    margin-left: auto;
+    top: 78px;
 }
 
 .post-container{
@@ -18,7 +15,7 @@
     margin: 20px;
     margin-top: -30px;
     border-radius: 20px;
-    border: 2px solid rgb(106, 106, 106);
+    border: 2px solid white;
     font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
 }
@@ -125,14 +122,14 @@
 }
 
 .recommendation-container{
-    height: 290px;
+    height: 285px;
     width: 90%;
     margin-left: 20px;
     margin-right: 20px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    border: 2px solid rgb(106, 106, 106);
+    border: 2px solid white;
 }
 
 .recommendation{
@@ -185,7 +182,7 @@
     width: 90px;
     position: fixed;
     margin-top: 35px;
-    margin-left: 185px;
+    margin-left: 240px;
     background-color: rgb(37, 186, 255);
     color: white;
     border: none;
