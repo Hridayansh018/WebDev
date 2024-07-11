@@ -1,0 +1,69 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+    <title>Dom Project</title>
+    <link rel="stylesheet" href="rps.css">
+  </head>
+
+  <body>
+    <p class="Subs-lable">Youtube subscribe button</p>
+    <button onclick="
+    Subscribe()
+    " class="js-subscribe-button">
+    Subscribe
+    </button>
+
+    <p class="cost-lable cost-up">Amazon Shipping Calculator</p>
+    <p class="cost-lable">Orders Under $50 = +$10 shipping</p>
+    <p class="cost-lable cost-down">Orders over $50 = Free shipping</p>
+
+
+    <input type="text" placeholder="cost of order" class="js-cost-of-order" onkeydown="costKey(event)">
+
+    <button onclick="calculateShipping();" class="calculate-button">calculate</button>
+
+    <p class="js-total-shipping-cost"></p>
+
+    <p class="rps-title">Rock Paper Scissors</p>
+    <p href="rps-dom-css.html">Click Here</p>
+
+    <script>
+
+      function Subscribe() {
+        const buttonElement = document.querySelector('.js-subscribe-button');
+    
+        if (buttonElement.innerText === 'Subscribe') {
+          buttonElement.innerHTML = 'Subscribed';
+          buttonElement.classList.add('class-subscribde-button');
+        } else {
+          buttonElement.innerHTML = 'Subscribe';
+          buttonElement.classList.remove('class-subscribde-button');
+        }
+    
+      }
+
+      function calculateShipping() {
+      const inputElement = document.querySelector('.js-cost-of-order');
+      let cost = Number(inputElement.value);
+      console.log(cost); // checking the input value
+      console.log(typeof cost); // checking the input type
+
+      if (cost <= 50) {
+        cost = cost += 10;
+      }
+
+      document.querySelector('.js-total-shipping-cost').innerHTML = `Shipping Cost: $${cost}`;
+      console.log(cost); // checking the output
+    }
+
+    function costKey(event) {
+      if (event.key === 'Enter') {
+        calculateShipping();
+      }
+    }
+
+    </script>
+
+  </body>
+
+</html>

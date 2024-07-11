@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>dom-Rock Paper Scissors</title>
+
+    <style>
+      body {
+        background-color: rgb(25 25 25);
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .rps-title {
+        font-size: 30px;
+        font-weight: bold ;
+      }
+
+      .rps-button {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+        height: 80px;
+        width: 80px;
+        border: 3px solid white;
+        border-radius: 50%;
+      }
+
+      .rps-image {
+        width: 60px;
+        height: 60px;
+        background-color: transparent;
+        
+      }
+
+      .reset-button {
+        color: white;
+        background-color: black;
+        padding: 10px;
+        width: 80px;
+        border: solid 2px white;
+        border-radius: 20px;
+        font-weight: bold;
+      }
+
+      .results{
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: 40px;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <p class="rps-title">rock paper scissors</p>
+
+    <button onclick="
+      playGame('rock');
+    " class="rps-button"><img src="images/rock-emoji.png" class="rps-image"></button>
+
+    <button onclick="
+    playGame('paper');
+    " class="rps-button"><img src="images/paper-emoji.png" class="rps-image"></button>
+
+    <button onclick="
+    playGame('scissors');
+    " class="rps-button"><img src="images/scissors-emoji.png" class="rps-image"></button>
+
+
+    <p class="js-result results"></p>
+
+    <p class="js-moves"> </p>
+
+    <p class="js-score" style="margin-top: 40px;"></p>
+
+
+    <button onclick="
+    score.win = 0;
+    score.loss = 0;
+    score.tie = 0
+    localStorage.removeItem('score');
+    updateScore();
+    " class="reset-button">reset</button>
+
+    <script src="rps.js">
+</script>
+  </body>
+
+</html>
