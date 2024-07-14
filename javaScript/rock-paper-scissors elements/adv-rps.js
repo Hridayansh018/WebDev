@@ -9,9 +9,15 @@ updateScore()
 let isAutoplaying = false;
 let intervalId;
 
+
+// function keyword as an parameter can be used as =>
+// as im using it in autoPlay() function 
+
+
+
 function autoplay() {
   if (!isAutoplaying) {
-    intervalId = setInterval(function() {
+    intervalId = setInterval(() => {
       const playerMove = pickComputerChoice();
       playGame(playerMove);
     }, 1000);
