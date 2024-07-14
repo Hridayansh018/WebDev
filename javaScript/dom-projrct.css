@@ -1,0 +1,44 @@
+body{font-family: Arial, Helvetica, sans-serif;}
+
+.Subs-lable {
+  font-size: 20px;
+  color: black;
+}
+
+.js-subscribe-button {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  border-radius: 30px;
+  width: 100px;
+  font-weight: bold;
+  border: none;
+}
+
+.class-subscribde-button {
+  background-color: black;
+  color: gray;
+}
+
+.calculate-button,
+.js-cost-of-order{
+  padding: 10px;
+  border: solod black;
+}
+
+.calculate-button{
+  background-color: rgb(20, 218, 20);
+  color: white;
+  border: none;
+  padding: 12px;
+  font-weight: bold;
+}
+
+.cost-lable{
+  font-size: 18px;
+  color: black;
+}
+
+.cost-up,.rps-title{margin-top: 50px;}
+.cost-down{margin-bottom: 20px;}
+
