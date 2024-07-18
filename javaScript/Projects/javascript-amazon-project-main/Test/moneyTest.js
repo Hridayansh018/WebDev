@@ -17,3 +17,9 @@ if (formatCurrency(2000.5) === '20.01') {
 } else {
     console.log('fail');
 }
+
+if (formatCurrency(2000.1) === '20.01') {
+    console.log('pass');
+} else {
+    console.log('fail');
+}
