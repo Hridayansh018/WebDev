@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
   <head>
 
@@ -9,18 +9,14 @@
 
     <p id="demo"></p>
 
-    <p class="Calculate"></p>
-
-    <div class="box">
-
     </div>
 
-    <div class="name">
-
+    <div>
+      <p class="infoo"></p>
     </div>
     
 
-    <!-- <script>
+     <script>
       
       
       document.getElementById("demo").innerHTML = "Hello World";
@@ -30,7 +26,7 @@
       document.querySelector('.box').innerHTML = testCode
     </script> -->
 
-    <script>
+    <!-- <script>
 
       let x = 5 + 2 + "3";
 
@@ -48,8 +44,34 @@
       document.write(x)
     </script>
 
-     <button onclick="window.print()">Print this page</button>
+     <button onclick="window.print()">Print this page</button> -->
 
+     <script>
+      const data = {
+        name1 : "Hridayansh",
+        name2 : 'Awasthi',
+        age : 17,
+        expences : 100000,
+        income : 0,
+        info : function() {
+          this.name1 + " " + this.name2 + "age is " + this.age + " and income is " + this.income + " and expences are " + this.expences
+        }
+      }
+
+      // document.getElementById("demo").innerHTML = data.name1 + " " + data.name2 + " " +"age is " + data.age + " and income is " + data.income + " and expences are " + data.expences
+
+      // let text = ""
+      // for (let x in data){
+      //   text += data[x] + " "
+      // }
+
+      // const myArray = Object.values(data)
+
+     const dext = (JSON.stringify(data))
+
+      document.getElementById("demo").innerHTML = dext
+
+     </script>
     
   </body>
-</html>
+</html> 
