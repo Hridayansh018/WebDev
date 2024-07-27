@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- npx tailwindcss -i ./styles.css -o ./output.css --config ../tailwind/tailwind.config.js --watch -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="styles/modif.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+  </head>
+  <body class="w-auto bg-center h-screen bg-cover bg-gray-800">
+          
+    <!-- header -->
+    <header class="bg-gray-600 top-0 left-0 right-0 fixed">
+      <nav class="flex items-center justify-between h-20 px-6">
+        <a href="#" class="text-white font-bold text-xl "><img src="images/logo.png" class="h-20 "></a>
+
+        <div class="hidden md:flex space-x-6">
+          <div class="relative">
+            <input type="text" placeholder="Search" class="px-4 py-2 rounded-full w-80 bg-gray-300">
+          </div>
+          <ul class="flex space-x-6 text-white">
+            <li><a href="#" class="hover:text-gray-400">Home</a></li>
+            <li><a href="#" class="hover:text-gray-400">Category</a></li>
+            <li><a href="#" class="hover:text-gray-400">Orders</a></li>
+            <li><a href="#" class="hover:text-gray-400">Contact</a></li>
+          </ul>
+          <div class="flex space-x-4">
+            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Login</button>
+            <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Sign up</button>
+            <button class="rounded-sm hover:bg-gray-500 h-10 w-10 mr-2"><i class="fa-solid fa-cart-shopping text-white mx-2"></i></button>
+          </div>
+        </div>
+
+        <div class="md:hidden text-white">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      
+      </nav>
+    </header> 
+
+    <div class="hero-section">
+      
+    </div>
+
+    <!-- main -->
+    <main class="flex-grow mt-5 ">
+
+        <!--Product grid-->
+      <div class="main-container bg-grey-800 h-auto py-10 my-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 px-5 js-product-grid">
+        <!-- product cards will be inserted here by JavaScript -->
+      </div> <!--grid end tag-->
+    </main>
+
+    <!-- footer -->
+    <footer class="h-96 bg-gray-800">
+      <!-- Your footer content here -->
+    </footer>
+   
+    <!-- Scripts -->
+    <script type="module" src="script/productGrid.js"></script>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+.product-spacer {
+  flex: 1;
+}
+
+.hero-section{
+    background-image:url("../bgbn1.jpg");
+    background-size: cover;
+    height: 400px;
+    margin-top:80px;
+}
