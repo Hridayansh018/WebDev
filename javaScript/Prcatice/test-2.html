@@ -5,14 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-  <h1 class="text-3xl font-bold underline">
+  <h1 class="text-3xl font-bold underline" id="text">
     Hello world!
   </h1>
-  <div style="height: 500px; width: 100px; background-color: black;">
-    <div></div>
-
-    </div>
-
+  <div>
+    <button id="btn1">change bg</button>
   </div>
+
+
+
+
+
+  <script>
+    let btn1 = document.querySelector('#btn1');
+    let curbg = "light";
+    let text = document.querySelector('#text');
+    btn1.addEventListener('click', () => {
+      if (curbg == "light") {
+        document.body.style.backgroundColor = "black";
+        text.style.color = "white";
+        curbg = "dark";
+      } else {
+        document.body.style.backgroundColor = "white";
+        text.style.color = "black";
+        curbg = "light";
+      }
+      console.log(curbg);
+    })
+  </script>
 </body>
 </html>
