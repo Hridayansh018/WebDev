@@ -17,21 +17,42 @@
 
 
   <script>
-    let btn1 = document.querySelector('#btn1');
-    let curbg = "light";
-    let text = document.querySelector('#text');
-    btn1.addEventListener('click', () => {
-      if (curbg == "light") {
-        document.body.style.backgroundColor = "black";
-        text.style.color = "white";
-        curbg = "dark";
-      } else {
-        document.body.style.backgroundColor = "white";
-        text.style.color = "black";
-        curbg = "light";
-      }
-      console.log(curbg);
-    })
+
+    function walkDog(){
+      return new Promise((resolve, reject) => {
+        setTimeout(() => {
+          let dogWalked = true;
+          if (dogWalked == true) {
+            resolve("dog walked")
+          } else  reject("dog not walked")
+        }, 3000)
+      })
+    }
+
+    function cleanThekitchen(){
+      return new Promise((resolve, reject) => {
+        setTimeout(() => {
+          let kitchenCleaned = true;
+          if (kitchenCleaned == true) {
+            resolve("you cleaned the kitchen    ")
+          } else  reject("you didn't clean the kitchen")
+        }, 3000)
+      })
+    }
+
+    function washCar(){
+      return new Promise((resolve, reject) => {
+        setTimeout(() => {
+          let carWashed = false;
+          if (carWashed == true) {
+            resolve("you washed the car")
+          } else  reject("you didn't washed the car")
+        }, 3000)
+      })
+    }
+
+    walkDog().then(value => {console.log(value); return cleanThekitchen();}).then(value => {console.log(value); return washCar();}).then(value => {console.log(value)}).catch(err => console.error(err))
+
   </script>
 </body>
 </html>

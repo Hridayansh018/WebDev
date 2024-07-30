@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/BootStrap/bootstrap-5.3.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="Bootstrap/js/bootstrap.bundle.js" async></script>
+    <title>My Weather App</title>
+  </head>
+
+  <body style="background-image: url(images/bg3.jpg); background-size: cover  ;">
+
+    <div class=" p-2">
+      <div class="grid">
+        <div class="row justify-content-md-center"  >
+          <div class="col-md-4 justify-content-center align-item-center rounded" style="background-color: rgba(146, 146, 146, 0.215);backdrop-filter: blur(3px);">
+            <h1 class="fw-bold text-center my-3 text-white">Vecta Weather <span><i class="fa-solid fa-cloud"></i></span></h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center">
+      <div class="grid my-5 mx-2">
+        <div class="row justify-content-md-center">
+          <div class="col-md-6 justify-content-center align-item-center" style="backdrop-filter: blur(3px);">
+            <div class="card text-center p-4 text-white" style="background-color: rgba(146, 146, 146, 0.215);">
+
+              <h1 class="fw-bold">Search Weather</h1>
+
+              <div class="input-group my-3" style="background-color: rgba(146, 146, 146, 0.215); ">
+                <span class="input-group-text p-2" style="background-color: rgba(146, 146, 146, 0.215); border:none; width: 40px; justify-content: center;">
+                  <i class="fa-solid fa-location-dot text-white"></i>
+                </span>
+
+                <input type="text" class="form-control p-2 text-white" id="cityInput" style="background-color: rgba(146, 146, 146, 0.215); border:none ;" placeholder="Enter Location">
+                <button class="input-group-text btn p-2 text-white" id="searchBtn" style="background-color: rgba(146, 146, 146, 0.215); width: 50px;">
+                  <span class="fa-solid fa-magnifying-glass"></span>
+                </button>
+                
+              </div>
+
+              <div class="my-2 info-card rounded opacity-80" id="Weatherconatiner">
+                <h1  class="js-city"></h1>
+                <h1 class="grid my-2 js-weatherStat "></h1>
+                
+                
+                <div class="imgCt">
+                  <img src="" class="img-fluid my-2 js-image"  style="max-width: 100%; height: 120px;">
+                </div>
+
+                <div class="infoCt text-white">
+                  <div class="row my-2">
+                    <div class="col">
+                      <h4 class="fw-bold temp">Temperature
+                        <h4 class="js-temperature">---</h4>
+                      </h4>
+                      
+                    </div>
+
+                    <div class="col">
+                      <h4 class="fw-bold feel">Feel
+                        <h4 class="js-temperature-feel">---</h4>
+                      </h4>
+                      
+                    </div>
+
+                    <div class="col">
+                      <h4 class="fw-bold hum">Humidity
+                        <h4 class="js-humidity">---</h4>
+                      </h4>
+                    </div>
+
+                  </div>
+                </div>
+              </div>  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="index.js"></script>
+  </body>
+</html>
