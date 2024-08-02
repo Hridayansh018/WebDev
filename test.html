@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let Person = function(name,age,gender){
+            this.name = name
+            this.age = age
+            this.gender = gender
+
+            this.introduce = function(){
+                console.log(this.name + " " + this.age + " " + this.gender)
+        }
+        console.log(this)
+    }
+
+    let Hridayansh = new Person("Hridayansh", 19, "Male").introduce()
+    let Anshika = new Person("Anshika", "17", "Female").introduce()
+
+    </script>
+</body>
+</html>
